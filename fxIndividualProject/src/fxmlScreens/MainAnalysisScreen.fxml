@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="screenControllers.MainAnalysisController">
+   <children>
+      <Label text="Specify Parameters for Graph to be Generate" textAlignment="CENTER" underline="true">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0">
+         <children>
+            <Label text="Filter Topics" underline="true">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <Label text="Academic Year">
+                     <VBox.margin>
+                        <Insets left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <HBox fx:id="hBoxAcademic" alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox alignment="TOP_CENTER" layoutX="10.0" layoutY="28.0" prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <Label text="Course">
+                     <VBox.margin>
+                        <Insets left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <HBox fx:id="hBoxCourse" alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox alignment="TOP_CENTER" layoutX="10.0" layoutY="28.0" prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <Label text="Gender">
+                     <VBox.margin>
+                        <Insets left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <CheckBox fx:id="cbFemale" mnemonicParsing="false" text="Female">
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </HBox.margin>
+                        </CheckBox>
+                        <CheckBox fx:id="cbMale" mnemonicParsing="false" text="Male">
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </HBox.margin>
+                        </CheckBox>
+                     </children>
+                     <VBox.margin>
+                        <Insets left="235.0" />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox alignment="TOP_CENTER" layoutX="10.0" layoutY="117.0" prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <Label text="Award">
+                     <VBox.margin>
+                        <Insets left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <CheckBox fx:id="cbDistinction" mnemonicParsing="false" text="Distinction">
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </HBox.margin>
+                        </CheckBox>
+                        <CheckBox fx:id="cbMerit" mnemonicParsing="false" text="Merit">
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </HBox.margin>
+                        </CheckBox>
+                        <CheckBox fx:id="cbPass" mnemonicParsing="false" text="Pass">
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </HBox.margin>
+                        </CheckBox>
+                        <CheckBox fx:id="cbLowerAward" mnemonicParsing="false" text="Lower Award">
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </HBox.margin>
+                        </CheckBox>
+                     </children>
+                     <VBox.margin>
+                        <Insets left="140.0" />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+      <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0">
+         <children>
+            <Label text="Comparision Topic" underline="true">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="15.0" />
+               </VBox.margin>
+            </Label>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <RadioButton fx:id="rbAcademicYear" mnemonicParsing="false" text="Academic Year">
+                     <padding>
+                        <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+                     </padding>
+                  </RadioButton>
+                  <RadioButton fx:id="rbCourse" mnemonicParsing="false" text="Course">
+                     <padding>
+                        <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+                     </padding>
+                  </RadioButton>
+                  <RadioButton fx:id="rbGender" mnemonicParsing="false" text="Gender">
+                     <padding>
+                        <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+                     </padding>
+                  </RadioButton>
+                  <RadioButton fx:id="rbAward" mnemonicParsing="false" text="Award">
+                     <padding>
+                        <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+                     </padding>
+                  </RadioButton>
+               </children>
+               <padding>
+                  <Insets left="100.0" />
+               </padding>
+            </HBox>
+         </children>
+      </VBox>
+      <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0">
+         <children>
+            <Label text="Graph" underline="true">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="15.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <RadioButton fx:id="rbBarChart" mnemonicParsing="false" text="Bar Chart">
+                     <padding>
+                        <Insets bottom="5.0" left="15.0" right="15.0" top="5.0" />
+                     </padding>
+                  </RadioButton>
+                  <RadioButton fx:id="rbLineChart" mnemonicParsing="false" text="Line Chart">
+                     <padding>
+                        <Insets bottom="5.0" left="15.0" right="15.0" top="5.0" />
+                     </padding>
+                  </RadioButton>
+                  <RadioButton fx:id="rbPieChart" mnemonicParsing="false" text="Pie Chart">
+                     <padding>
+                        <Insets bottom="5.0" left="15.0" right="15.0" top="5.0" />
+                     </padding>
+                  </RadioButton>
+               </children>
+               <padding>
+                  <Insets left="140.0" />
+               </padding>
+            </HBox>
+         </children>
+         <VBox.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" />
+         </VBox.margin>
+      </VBox>
+      <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0">
+         <children>
+            <Label alignment="TOP_CENTER" text="Seperates Topic (only for Complex Bar Charts)" underline="true">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="15.0" />
+               </VBox.margin>
+            </Label>
+            <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+               <children>
+                  <RadioButton fx:id="rbSeperatesSimple" mnemonicParsing="false" text="Simple Graph" />
+                  <RadioButton fx:id="rbSeperatesAcademicYear" mnemonicParsing="false" text="Academic Year" />
+                  <RadioButton fx:id="rbSeperatesCourse" mnemonicParsing="false" text="Course" />
+                  <RadioButton fx:id="rbSeperatesGender" mnemonicParsing="false" text="Gender" />
+                  <RadioButton fx:id="rbSeperatesAward" mnemonicParsing="false" text="Award" />
+               </children></HBox>
+         </children>
+      </VBox>
+      <Label fx:id="lblErrorMessage" alignment="TOP_CENTER" text="-" textFill="RED">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#generateGraphPressed" text="Generate Graph">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#helpPressed" text="Help Information">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#manageSourcesPressed" text="Manage Sources">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</VBox>

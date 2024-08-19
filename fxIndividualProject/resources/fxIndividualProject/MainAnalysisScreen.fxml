@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.gluonhq.charm.glisten.control.ToggleButtonGroup?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label text="Label" textAlignment="CENTER" underline="true">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0">
+         <children>
+            <Label text="Filter Topics" underline="true">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <VBox fx:id="vboxAcademic" alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <Label text="Academic Year">
+                     <VBox.margin>
+                        <Insets left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                  </Label>
+                  <CheckBox mnemonicParsing="false" text="CheckBox">
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin></CheckBox>
+               </children>
+            </VBox>
+            <VBox fx:id="vboxCourse" alignment="TOP_CENTER" layoutX="10.0" layoutY="28.0" prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <Label text="Course">
+                     <VBox.margin>
+                        <Insets left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                  </Label>
+                  <CheckBox mnemonicParsing="false" text="CheckBox">
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin></CheckBox>
+               </children>
+            </VBox>
+            <VBox alignment="TOP_CENTER" layoutX="10.0" layoutY="28.0" prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <Label text="Gender">
+                     <VBox.margin>
+                        <Insets left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                  </Label>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <CheckBox mnemonicParsing="false" text="Female">
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </HBox.margin>
+                        </CheckBox>
+                        <CheckBox mnemonicParsing="false" text="Male">
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </HBox.margin>
+                        </CheckBox>
+                     </children>
+                     <VBox.margin>
+                        <Insets left="235.0" />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox alignment="TOP_CENTER" layoutX="10.0" layoutY="117.0" prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <Label text="Award">
+                     <VBox.margin>
+                        <Insets left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                  </Label>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <CheckBox mnemonicParsing="false" text="Distinction">
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </HBox.margin>
+                        </CheckBox>
+                        <CheckBox mnemonicParsing="false" text="Merit">
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </HBox.margin>
+                        </CheckBox>
+                        <CheckBox mnemonicParsing="false" text="Pass">
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </HBox.margin>
+                        </CheckBox>
+                        <CheckBox mnemonicParsing="false" text="Lower Award">
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </HBox.margin>
+                        </CheckBox>
+                     </children>
+                     <VBox.margin>
+                        <Insets left="140.0" />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+      <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0">
+         <children>
+            <Label text="Comparison Topic" underline="true">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="15.0" />
+               </VBox.margin>
+            </Label>
+            <ToggleButtonGroup fx:id="btnGrpComparison" selectionType="MULTIPLE">
+               <toggles>
+                  <RadioButton fx:id="academicYear" mnemonicParsing="false" text="Academic Year">
+                     <padding>
+                        <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+                     </padding>
+                  </RadioButton>
+                  <RadioButton fx:id="jacsCode" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" text="Course">
+                     <padding>
+                        <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+                     </padding>
+                  </RadioButton>
+                  <RadioButton fx:id="isMale" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" text="Gender">
+                     <padding>
+                        <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+                     </padding>
+                  </RadioButton>
+                  <RadioButton fx:id="award" layoutX="98.0" layoutY="10.0" mnemonicParsing="false" text="Award">
+                     <padding>
+                        <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+                     </padding>
+                  </RadioButton>
+               </toggles>
+               <VBox.margin>
+                  <Insets left="100.0" />
+               </VBox.margin>
+            </ToggleButtonGroup>
+         </children>
+      </VBox>
+      <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0">
+         <children>
+            <Label text="Graph" underline="true">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="15.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <ToggleButtonGroup fx:id="btnGrpGraph" selectionType="SINGLE">
+                <toggles>
+                  <RadioButton fx:id="barChart" mnemonicParsing="false" text="Bar Chart">
+                     <padding>
+                        <Insets bottom="5.0" left="15.0" right="15.0" top="5.0" />
+                     </padding>
+                  </RadioButton>
+                  <RadioButton fx:id="lineChart" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" text="Line Chart">
+                     <padding>
+                        <Insets bottom="5.0" left="15.0" right="15.0" top="5.0" />
+                     </padding>
+                  </RadioButton>
+                  <RadioButton fx:id="pieChart" layoutX="107.0" layoutY="10.0" mnemonicParsing="false" text="Pie Chart">
+                     <padding>
+                        <Insets bottom="5.0" left="15.0" right="15.0" top="5.0" />
+                     </padding>
+                  </RadioButton>
+                </toggles>
+               <VBox.margin>
+                  <Insets left="125.0" right="25.0" />
+               </VBox.margin>
+            </ToggleButtonGroup>
+         </children>
+         <VBox.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" />
+         </VBox.margin>
+      </VBox>
+      <Label fx:id="lblErrorMessage" text="-" textFill="RED">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#generateGraphPressed" text="Generate Graph">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#helpPressed" text="Help Information">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#manageSourcesPressed" text="Manage Sources">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</VBox>
